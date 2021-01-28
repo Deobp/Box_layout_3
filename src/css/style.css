@@ -1,0 +1,42 @@
+body {
+  background-color: hsl(185, 75%, 39%);
+  height: 100vh;
+  margin: 0;
+}
+
+.table {
+  width: 450px;
+  height: 500px;
+  background-color: white;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1/3 1/3 1/3;
+}
+
+.table-top {
+  background-color: hsl(229, 23%, 23%);
+}
+
+.table-mid-info {
+  text-align: center;
+}
+
+.table-bottom-numbers {
+  display: flex;
+}
+
+.table-bottom-numbers p {
+  margin: 0 auto;
+}
+
+.table-bottom-info {
+  display: flex;
+}
+
+.table-bottom-info p {
+  margin: 0 auto;
+}
+
+.table-mid-img {
+  position: relative;
+}

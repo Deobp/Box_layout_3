@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: hsl(185, 75%, 39%);
   height: 100vh;
   margin: 0;
@@ -39,4 +39,31 @@ body {
 
 .table-mid-img {
   position: relative;
+} */
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  height: 100vh;
+  margin: 0;
+}
+
+.table {
+  width: 450px;
+  height: 500px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-top {
+  background-image: url("../img/bg-pattern-card.svg");
+  height: 100px;
+  width: 100%;
+}
+
+.table-bottom-numbers p {
+  display: inline;
 }

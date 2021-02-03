@@ -47,15 +47,16 @@ body {
   margin: 0;
 }
 
+.container {
+  display: flex;
+  text-align: center;
+}
+
 .table {
   width: 450px;
-  height: 500px;
   background-color: white;
   margin: 0 auto;
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .table-top {
@@ -65,38 +66,37 @@ body {
   width: 100%;
 }
 
+.table-mid-info p,
+h1 {
+  margin: 0;
+}
+
 .table-bottom {
   width: 100%;
 }
-
-.table-bottom-numbers {
-  width: 100%;
-  display: flex;
+.table-bottom hr {
+  margin: 0;
 }
 
-.table-bottom-numbers h1 {
-  margin: 0 auto;
+.count-follower h1,
+.count-likes h1,
+.count-photos h1,
+.followers,
+.likes p,
+.photos p {
+  margin: 0;
 }
 
 .table-bottom-info {
-  display: flex;
-}
-
-.table-bottom-info p {
-  margin: 0 auto;
 }
 
 .table-mid {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .table-mid-bio {
-  width: 100%;
 }
+
 .table-mid-img img {
   border-radius: 50%;
-  position: relative;
-  top: -3em;
+  transform: translate(0px, -50%);
 }

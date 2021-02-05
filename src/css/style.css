@@ -28,7 +28,6 @@ p {
 
 hr {
   color: hsl(0, 0%, 59%);
-  padding: 2em 0 0 2em;
 }
 
 .container {
@@ -67,6 +66,7 @@ hr {
   border-right-style: solid;
   border-bottom-width: 5px;
   border-bottom-style: solid;
+  overflow: hidden;
 }
 
 .table-bottom {

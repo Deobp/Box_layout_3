@@ -1,8 +1,9 @@
 body {
   background-color: hsl(185, 75%, 39%);
   height: 100vh;
-  background-image: url("../img/bg-pattern-top.svg"),
-    url("../img/bg-pattern-bottom.svg");
+  background: url("../img/bg-pattern-top.svg") top -300px left -300px no-repeat,
+    url("../img/bg-pattern-bottom.svg") bottom -300px right -300px no-repeat,
+    hsl(185, 75%, 39%);
   font-family: "Kumbh Sans", sans-serif;
   display: flex;
   justify-content: center;
@@ -14,7 +15,6 @@ h1 {
   font-weight: 700;
   color: hsl(229, 23%, 23%);
   margin: 0;
-  padding: 0.3em 0 0 1em;
 }
 
 small {
@@ -31,26 +31,33 @@ hr {
 }
 
 .container {
-  display: flex;
   text-align: center;
 }
 
 .table {
-  width: 450px;
-  background-color: white;
+  width: 350px;
   border-radius: 20px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .table-top {
   background-image: url("../img/bg-pattern-card.svg");
   background-repeat: round;
-  height: 100px;
-  width: 100%;
+  flex: 1 0 125px;
 }
 #age {
   color: hsl(227, 10%, 46%);
   font-weight: 400;
+}
+
+.table-mid {
+  background-color: white;
+  flex: 1 0 150px;
+}
+.table-mid-img {
+  height: 4em;
 }
 
 .table-mid-img img {
@@ -61,11 +68,16 @@ hr {
 
 .table-bottom {
   border-radius: 0 0 15px 15px;
+  background-color: white;
+  flex: 1 0 100px;
+  border-top: 1px;
+  border-color: red;
 }
 
 .table-bottom-info {
   display: flex;
   padding-bottom: 1em;
+  margin-top: 25px;
 }
 
 .followers,
